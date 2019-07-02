@@ -79,40 +79,49 @@
         </div>
     </div>
     <!-- News -->
-    <div class="container news d-flex">
-        <div class="card mr-5">
-            <img class="card-img" src="img/dicas para memorizar matéria.jpg" alt="Tumblr noticias">
-            <div class="card-body">
-                <h5 class="card-title font-weight-bold">3 dicas para memorizar a matéria da prova</h5>
-                <p class="card-text">Uma das maiores dificuldades dos estudantes é conseguir memorizar 
-                    toda a matéria ou pelo menos a maior parte dela antes de realizar uma prova. 
-                    Isso porque sabemos que, muitas vezes, a matéria é grande e o tempo é curto. Por isso, 
-                    listamos algumas dicas para facilitar esse processo.</p>
-                <span class="font-weight-bold">Marcela Carneiro</span>
-                <a href="3-dicas-para-memorizar-melhor-a-materia-das-provas.html" class="more-news">mais</a>
+    <div class="container news">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img" src="img/dicas para memorizar matéria.jpg" alt="Tumblr noticias">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">3 dicas para memorizar a matéria da prova</h5>
+                        <p class="card-text">Uma das maiores dificuldades dos estudantes é conseguir memorizar 
+                            toda a matéria ou pelo menos a maior parte dela antes de realizar uma prova...</p>
+                        <span class="font-weight-bold">Marcela Carneiro</span>
+                        <a href="3-dicas-para-memorizar-melhor-a-materia-das-provas.html" class="more-news">mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img" src="img/como conciliar trabalho e estudos.jpg" alt="Tumblr noticias">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Dicas práticas para conciliar estudo e trabalho</h5>
+                        <p class="card-text">Conciliar estudos e trabalho não é exatamente a coisa mais simples de se fazer. Por isso, separamos algumas dicas para deixar a sua rotina um pouco mais fácil!</p>
+                        <span class="font-weight-bold">Esther Luísa Oliveira</span>
+                        <a href="dicas-praticas-para-conciliar-uma-rotina-de-estudos-e-trabalho.html" class="more-news">mais</a>
+                    </div>
+                </div>          
+            </div>
+            <!-- Card newsletter -->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card-news">
+                    <div class="card-header">
+                        <h5 class="title-card">Baixe gratuitamente a nossa planilha de Estudos e organize melhor o seu tempo!</h5>
+                    </div>
+                    <div class="card-body">
+                        <form name="newsLateral" action="POST" data-netlify="true">
+                            <input name="nome" class="w-100" type="text" placeholder="Nome completo" required>
+                            <input name="email" class="w-100" type="email" placeholder="E-mail" required>
+                            <button type="submit" onclick="downloadMaterial();">EU QUERO!</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card mr-5">
-            <img class="card-img" src="img/como conciliar trabalho e estudos.jpg" alt="Tumblr noticias">
-            <div class="card-body">
-                <h5 class="card-title font-weight-bold">Dicas práticas para conciliar estudo e trabalho</h5>
-                <p class="card-text">Conciliar estudos e trabalho não é exatamente a coisa mais simples de se fazer. Por isso, separamos algumas dicas para deixar a sua rotina um pouco mais fácil!</p>
-                <span class="font-weight-bold">Esther Luísa Oliveira</span>
-                <a href="dicas-praticas-para-conciliar-uma-rotina-de-estudos-e-trabalho.html" class="more-news">mais</a>
-            </div>
-        </div>
-        <!-- Card newsletter -->
-        <div class="card-news">
-            <div class="card-header">
-                <h5 class="title-card">Assine nossa newsletter</h5>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a convallis neque, a acus sed </span>
-            </div>
-            <div class="card-body">
-                <input class="w-100" type="text" placeholder="Digite aqui seu nome">
-                <input class="w-100" type="text" placeholder="Digite aqui seu email">
-                <input class="d-block w-100"type="submit" value="Quero receber a newsletter">
-            </div>
-        </div>
+
+
     </div>
     <!-- Pagination -->
     <div class="container d-flex justify-content-center">
@@ -168,5 +177,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function downloadMaterial() {
+            if (newsLateral.nome.value == "" || newsLateral.email.value == "") {
+                alert("Campos obrigatórios faltando!");
+            } else {
+                return window.open("http://encurtador.com.br/gBCEU");
+            }
+        }
+    </script>
 </body>
 </html>
