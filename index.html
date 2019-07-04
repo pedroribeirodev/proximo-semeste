@@ -16,28 +16,13 @@
     <!-- Topo -->
     <div class="container-fluid custom">
         <header class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo.png" class="d-inline-block align-top" alt="Logo Próximo Semestre">
-                </a>
-                <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
-                    <span class="navbar-toggler-icon text-dark"></span>
-                </button>
-                <div id="menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto text-dark">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Estudo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Assine nossa newsletter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <!-- <a href="index.html" class="d-flex justify-content-left">
+                <img src="img/home.png" alt="Icone inicio">Home
+            </a> -->
+            <a href="index.html" class="d-flex justify-content-center pt-3 pb-3">
+                <img src="img/logo.png"  alt="Logo Próximo Semestre">
+            </a>
+
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143088535-1"></script>
             <script>
@@ -111,20 +96,47 @@
                 </a>        
             </div>
             <!-- Card newsletter -->
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 justify-content-right">
                 <div class="card-news">
-                    <div class="card-header">
-                        <h5 class="title-card">Baixe gratuitamente o nosso Ciclo de Estudos e organize melhor o seu tempo!</h5>
-                    </div>
                     <div class="card-body">
                         <form name="newsLateral" action="POST" data-netlify="true">
-                            <input name="nome" class="w-100" type="text" placeholder="Nome completo" required>
+                            <input name="nome" class="w-100" type="text" placeholder="Nome" required>
+                            <input name="nome" class="w-100" type="text" placeholder="Sobrenome" required>
                             <input name="email" class="w-100" type="email" placeholder="E-mail" required>
                             <button type="submit" onclick="downloadMaterial();">EU QUERO!</button>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- More news -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4">
+                <a href="5-dicas-para-ingressar-no-mercado-de-trabalho.html" class="link-card">
+                    <div class="card">
+                        <img class="card-img" src="img/dicas para ingressar no mercado de trabalho.jpg" alt="Tumblr noticias">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">5 dicas para ingressar no mercado de trabalho</h5>
+                            <p class="card-text">O mercado de trabalho está cada vez mais competitivo no Brasil. Você provavelmente já ouviu essa frase, correto? Confira!</p>
+                            <span class="font-weight-bold">Lucas Silva</span>
+                            <a href="5-dicas-para-ingressar-no-mercado-de-trabalho.html" class="more-news">mais</a>
+                        </div>
+                    </div>
+                </a>        
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-4">
+                <a href="3-dicas-basicas-para-um-curriculo-diferenciado.html" class="link-card">
+                    <div class="card">
+                        <img class="card-img" src="img/dicas para ter um currículo diferenciado.png" alt="Tumblr noticias">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">3 Dicas básicas para um currículo diferenciado</h5>
+                            <p class="card-text">Você já parou parar pensar na importância de se ter um currículo bem elaborado? Se destacar no mercado de trabalho é um dos maiores desafios para os jovens...</p>
+                            <span class="font-weight-bold">Fernanda Bicalho</span>
+                            <a href="3-dicas-basicas-para-um-curriculo-diferenciado.html" class="more-news">mais</a>
+                        </div>
+                    </div>
+                </a>        
+            </div>  
         </div>
 
 

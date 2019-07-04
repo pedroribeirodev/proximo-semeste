@@ -14,28 +14,9 @@
     <!-- Topo -->
     <div class="container-fluid custom">
         <header class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo.png" class="d-inline-block align-top" alt="Logo Próximo Semestre">
-                </a>
-                <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
-                    <span class="navbar-toggler-icon text-dark"></span>
-                </button>
-                <div id="menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto text-dark">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Estudo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Assine nossa newsletter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <a href="index.html" class="d-flex justify-content-center pt-3 pb-3">
+                <img src="img/logo.png"  alt="Logo Próximo Semestre">
+            </a>
         </header>
     </div>
     <!-- Search -->
@@ -94,12 +75,10 @@
             <!-- Card newsletter -->
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <div class="card-interna">
-                    <div class="card-header">
-                        <h5 class="title-card">Baixe gratuitamente o nosso Ciclo de Estudos e organize melhor o seu tempo!</h5>
-                    </div>
                     <div class="card-body">
                         <form name="newsLateral" action="POST" data-netlify="true">
-                            <input name="nome" class="w-100" type="text" placeholder="Nome completo" required>
+                            <input name="nome" class="w-100" type="text" placeholder="Nome" required>
+                            <input name="nome" class="w-100" type="text" placeholder="Sobrenome" required>
                             <input name="email" class="w-100" type="email" placeholder="E-mail" required>
                             <button type="submit" onclick="downloadMaterial();">EU QUERO!</button>
                         </form>
