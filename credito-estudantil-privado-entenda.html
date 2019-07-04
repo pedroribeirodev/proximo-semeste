@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Próximo Semestre</title>
+    <!-- Css bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+</head>
+<body>
+    <!-- Topo -->
+    <div class="container-fluid custom">
+        <header class="container">
+            <a href="index.html" class="d-flex justify-content-center pt-3 pb-3">
+                <img src="img/logo.png"  alt="Logo Próximo Semestre">
+            </a>
+        </header>
+    </div>
+    <!-- Search -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="search d-flex align-items-center">
+                    <img src="iconic/svg/magnifying-glass.svg" alt="Icone lupa" class="lupa">
+                    <input type="search" placeholder="O que você procura?">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Noticia -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="article">
+                    <img src="img/Credito Estudantil.jpg" alt="Credito estudantil">
+                    <h1 class="title-article">Crédito Estudantil Privado: entenda o que é</h1>
+                    <h2>O que é crédito estundantil?</h2>
+                    <p>Vivemos em um momento complicado no Brasil, onde estamos passando por uma crise, e trabalhar e estudar se tornou bastante difícil.</p>
+                    <p>Para que você não fique adiando o sonho de ter um curso superior, ou até mesmo aquela pós graduação dos sonhos, existe o crédito estudantil, por meio do qual parte dos custos ou até mesmo o valor total do curso é financiado por uma instituição financeira.</p>
+                    <h3>Financiamento Estudantil Público</h3>
+                    <p>Você já deve ter escutado falar do Fundo de Financiamento Estudantil (FIES), um programa criado pelo governo federal para ampliar o acesso ao ensino superior a estudantes que não conseguiriam arcar com o preços dos cursos.</p>
+                    <p>Hoje o programa atende dois públicos, através de dois tipos de modalidade, o FIES e o P-FES.</p>
+                    <h4>FIES</h4>
+                    <p>Esta modalidade de financiamento administrada pelo governo e com taxa zero, destinado a universitários com renda familiar per capita menor que 3 salários mínimos e que no ENEM tenham tirado nota média aritmética, igual ou superior a 450 pontos e não tenham zerado a redação.</p>
+                    <img src="img/Crédito estudantil privado 2.jpg" alt="Crédito Estudantil privado">
+                    <h4>P-FIES</h4>
+                    <p>Já esta modalidade de financiamento, possui taxas de juros e é destinada a universitários com renda familiar per capita entre 3 a 5 salários mínimos é administrado por empresas privadas.</p>
+                    <h3>Crédito Estudantil Privado</h3>
+                    <p>Se você não se encaixou nesses perfis, o crédito estudantil privado é uma ótima opção para você conseguir pagar a tão sonhada formação.</p>
+                    <p>Nesta modalidade, você consegue financiar, através das instituições financeiras, até 100% do seu curso, com taxa de juros atrativas, não precisa de comprovar nota do enem. O crédito também pode ser utilizado para Pós, MBA e curso técnico, e também vale para cursos presenciais e à distância (EaD).</p>  
+                    <p>Gostou das nossas dicas? Fale com a gente pelo formulário abaixo! Adoramos sugestões, tirar dúvidas ou até mesmo bater um papo :)</p>
+                </div>
+            </div>
+            <!-- Card newsletter -->
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="card-interna">
+                    <div class="card-body">
+                        <form name="newsLateral" action="POST" data-netlify="true">
+                            <input name="nome" class="w-100" type="text" placeholder="Nome" required>
+                            <input name="nome" class="w-100" type="text" placeholder="Sobrenome" required>
+                            <input name="email" class="w-100" type="email" placeholder="E-mail" required>
+                            <button type="submit" onclick="downloadMaterial();">EU QUERO!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="news-bg">
+                    <div class="news-header">
+                        <h5 class="title-news">Vamos trocar uma ideia?<br /> Entre em contato com a gente!</h5>
+                    </div>
+                    <div class="news-body">
+                        <form name="newsRocket" action="POST" data-netlify="true">
+                            <input name="nome" type="text" placeholder="Nome completo" required>
+                            <input name="email" type="email" placeholder="E-mail" required>
+                            <input name="mensagem" type="text" placeholder="Mensagem" required>
+                            <button type="submit">ENVIAR</button>
+                            <!-- <span class="aviso">Ao fornecer o seu e-mail, você concordará em receber conteúdo</span> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid bg-rodape">
+        <!-- <hr/> -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col-md-3">
+                        <img src="img/logoBranca.png" alt="Logo Próximo Semestre">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-light align-midle">Categorias</h5>
+                    <ul class="text-light p-0">
+                        <li class="text-light"><a href="#" class="text-light">Dicas de Estudo</a></li>
+                        <li class="text-light"><a href="#" class="text-light">Carreira</a></li>
+                        <li class="text-light"><a href="#" class="text-light">Crédito Estudantil</a></li>
+                        <li class="text-light"><a href="#" class="text-light">ENEM 2019</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-light">Vamos trocar uma ideia?<br />Entre em contato com a gente!</h5>
+                    <div class="search-footer d-flex align-items-center">
+                        <form name="news-footer" method="POST" data-netlify="true">
+                            <input type="text" class="w-100"  name="nome" placeholder="Nome completo" required>
+                            <input type="email" class="w-100" name="email" placeholder="Seu e-mail" required>
+                            <input type="text" class="w-100"  name="mensagem" placeholder="Mensagem" required>
+                            <input type="submit" value="ENVIAR">
+                            <span class="alert-news">Ao fornecer o seu e-mail, você concordará em receber conteúdo</span>
+                        </form>         
+                    </div>
+                </div>
+                <div class="offset-md-1 col-md-2">
+                    <h5 class="text-light">Redes Sociais</h5>
+                    <a href="https://www.instagram.com/proximosemestre/" target="_blank"><img src="img/instagram.png" alt="Logo Instagram" style="width: 25px; height: auto;"></a>
+                    <a href="https://twitter.com/ProximoSemestr" target="_blank"><img src="img/twitter.png" alt="Logo twitter" style="width: 25px; height: auto;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- JS Bootstrap -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
