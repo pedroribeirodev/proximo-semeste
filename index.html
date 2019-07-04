@@ -34,26 +34,6 @@
             </script>
         </header>
     </div>
-    <!-- Spotlight -->
-    <!-- <div class="container spot">  
-        <div class="row">
-            <div class="col-md-6">
-                <div class="box-left">
-                    <span class="d-block spotlight">Destaque da semana</span>
-                    <span class="d-block title">Novo FIES juro zero: Tem para todos?</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a convallis neque,
-                    a venenatis tellus. In euismod lacus sed massa sollicitudin, ut tincidunt massa pretium.</p>
-                    <hr/>
-                    <img src="img/perfil.png" alt="Foto Perfil">
-                    <span class="name">Por Larissa Ferreira</span>
-                    <span class="date">Data: 11/07/2019</span>
-                </div>
-            </div>
-            <div class="col-md-6 p-0">
-                <img src="img/img-slide.png" alt="Imagem Destaque"> 
-            </div>  
-        </div>            
-    </div> -->
     <!-- Search -->
     <div class="container">
         <div class="row ">
@@ -132,7 +112,7 @@
                     <div class="card-body">
                         <form name="newsLateral" action="POST" data-netlify="true">
                             <input name="nome" class="w-100" type="text" placeholder="Nome" required>
-                            <input name="nome" class="w-100" type="text" placeholder="Sobrenome" required>
+                            <input name="sobrenome" class="w-100" type="text" placeholder="Sobrenome" required>
                             <input name="email" class="w-100" type="email" placeholder="E-mail" required>
                             <button type="submit" onclick="downloadMaterial();">EU QUERO!</button>
                         </form>
@@ -141,18 +121,6 @@
             </div>
         </div>
     </div>
-    <!-- Pagination -->
-    <!-- <div class="container d-flex justify-content-center">
-        <nav aria-label="pagination nav">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-            </ul>
-        </nav>
-    </div> -->
-
-
     <!-- Footer -->
     <footer class="container-fluid bg-rodape">
         <!-- <hr/> -->
@@ -198,7 +166,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         function downloadMaterial() {
-            if (newsLateral.nome.value == "" || newsLateral.email.value == "") {
+            if (newsLateral.nome.value == "" || newsLateral.email.value == "" || newsLateral.sobrenome.value == "") {
                 alert("Campos obrigatórios faltando!");
             } else {
                 // console.log("entrou");
